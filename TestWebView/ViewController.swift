@@ -20,11 +20,8 @@ class ViewController: UIViewController {
         
         webView.load(request)
         
-        let newContentInset = UIEdgeInsets(top: 700, left: 0, bottom: 0, right: 0)
+        let newContentInset = UIEdgeInsets(top: 800, left: 0, bottom: 0, right: 0)
         webView.scrollView.contentInset.top = newContentInset.top
-
-//        webView.setValue(newContentInset, forKey: "_obscuredInsets")
-//        webView.setValue(true, forKey: "_haveSetObscuredInsets")
 
         DispatchQueue.main.asyncAfter(deadline: .now() + 5) {
             self.webView.reload()
